@@ -13,7 +13,7 @@ window.addEventListener('scroll', function(){
 })
 
 //laddning av localstorage
-//document.body.style.backgroundColor = localStorage.getItem("jscolorbg");
+document.body.style.backgroundColor = localStorage.getItem("jscolorbg");
 //document.documentElement.style.setProperty("--color","jscolor");
 //document.documentElement.style.setProperty("--colortxt","jscolortxt");
 
@@ -27,7 +27,7 @@ function DarkMode() {
     document.documentElement.style.setProperty("--colortxt","white");
 
     //sparar färg i localstorage
-    //localStorage.setItem("jscolorbg", "#282828");
+    localStorage.setItem("jscolorbg", "#282828");
     //localStorage.setItem("jscolor", "#121212");
     //localStorage.setItem("jscolortxt", "white");
 }    
@@ -40,7 +40,7 @@ function LightMode() {
     document.documentElement.style.setProperty("--colortxt","black");
 
     //sparar färg i localstorage
-    //localStorage.setItem("jscolorbg", "#white");
+    localStorage.setItem("jscolorbg", "#white");
     //localStorage.setItem("jscolor", "#e6add8");
     //localStorage.setItem("jscolortxt", "white");
 }
