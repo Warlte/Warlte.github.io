@@ -1,4 +1,3 @@
-
 .container-fluid{
   display: grid;
   grid-template-rows: auto;
@@ -11,6 +10,10 @@ div{
 header{
   grid-row-start: 1;
   min-height: 1080px;
+}
+
+h3{
+    color: var(--colortxt,black);
 }
 
 section{
@@ -39,7 +42,8 @@ section img{
 #text{
   margin-top: 10%;
   position: relative;
-  color: #fff;
+  /*color: #fff;*/
+  color: #0039BF;
   font-size: 10em;
   z-index: 1;
 }
@@ -64,7 +68,7 @@ nav{
 main{
   grid-row-start:3;
   min-height: 1080px;
-  background-color: #e6add8  ;
+  background-color: var(--color,#e6add8);
   height: auto;
 }
 
@@ -72,12 +76,12 @@ footer{
   grid-row-start: 5;
   min-height: 700px;
   height: auto;
-  background-color: #e6add8  ;
+  background-color: var(--color,#e6add8);
 }
 
 .panel{
   text-align: center;
-  background-color: #e6add8  ;
+  background-color: var(--color,#e6add8);
   max-height: 100%;
   max-width: 100%;
 }
@@ -88,7 +92,6 @@ img{
 
 @media only screen and (max-width: 700px) {
   .container-fluid {
-    background-color: green;
   }
   section{
     display: none;
