@@ -16,12 +16,16 @@ window.addEventListener('scroll', function(){
 document.body.style.backgroundColor = localStorage.getItem("jscolorbg");
 //document.documentElement.style.setProperty("--color","jscolor");
 //document.documentElement.style.setProperty("--colortxt","jscolortxt");
+let btn1 = document.getElementById('LightButton');
+btn1.style.display='inline';
+let btn2 = document.getElementById('DarkButton');
+btn2.style.display='inline';
 
 
 
 function DarkMode() {
     console.log("klickat Dark")
-    
+
     document.body.style.backgroundColor = "#282828";
     document.documentElement.style.setProperty("--color","#121212");
     document.documentElement.style.setProperty("--colortxt","white");
@@ -30,11 +34,11 @@ function DarkMode() {
     localStorage.setItem("jscolorbg", "#282828");
     //localStorage.setItem("jscolor", "#121212");
     //localStorage.setItem("jscolortxt", "white");
-}    
+}
 
 function LightMode() {
     console.log("klickat Light")
-    
+
     document.body.style.backgroundColor = "white";
     document.documentElement.style.setProperty("--color","#e6add8");
     document.documentElement.style.setProperty("--colortxt","black");
@@ -44,4 +48,3 @@ function LightMode() {
     //localStorage.setItem("jscolor", "#e6add8");
     //localStorage.setItem("jscolortxt", "white");
 }
-
